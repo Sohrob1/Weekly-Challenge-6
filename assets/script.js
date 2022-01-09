@@ -56,9 +56,6 @@ function returnWeatherForecast(cityName) {
         })
     })
 };
-
-// The current UV index is collected at the same time as the current weather
-// by making use of the searched city's returned coordinates
 function returnUVIndex(coordinates) {
     let queryURL = `https://api.openweathermap.org/data/2.5/uvi?lat=${coordinates.lat}&lon=${coordinates.lon}&APPID=${apiKey}`;
 
